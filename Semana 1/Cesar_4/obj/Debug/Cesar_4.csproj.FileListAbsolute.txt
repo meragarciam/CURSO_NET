@@ -1,0 +1,7 @@
+C:\Users\MAÑANA\source\repos\Semana 1\Cesar_4\bin\Debug\Cesar_4.exe.config
+C:\Users\MAÑANA\source\repos\Semana 1\Cesar_4\bin\Debug\Cesar_4.exe
+C:\Users\MAÑANA\source\repos\Semana 1\Cesar_4\bin\Debug\Cesar_4.pdb
+C:\Users\MAÑANA\source\repos\Semana 1\Cesar_4\obj\Debug\Cesar_4.csprojAssemblyReference.cache
+C:\Users\MAÑANA\source\repos\Semana 1\Cesar_4\obj\Debug\Cesar_4.csproj.CoreCompileInputs.cache
+C:\Users\MAÑANA\source\repos\Semana 1\Cesar_4\obj\Debug\Cesar_4.exe
+C:\Users\MAÑANA\source\repos\Semana 1\Cesar_4\obj\Debug\Cesar_4.pdb
