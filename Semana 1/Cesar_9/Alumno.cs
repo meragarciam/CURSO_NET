@@ -1,21 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace Cesar_9
 {
-    public partial class Alumno : Form
+    class Alumno
     {
         string nombre;
         int edad;
         int nota;
-       
         public void Inicializar()
         {
             Console.Write("Ingrese el nombre: ");
@@ -26,15 +21,15 @@ namespace Cesar_9
             edad = int.Parse(linea);
             string linea1;
             Console.Write("Ingrese la nota: ");
-            linea1= Console.ReadLine();
+            linea1 = Console.ReadLine();
             nota = int.Parse(linea1);
         }
         public void AsignarCurso()
         {
-            if (nota >= 40 && nota <= 59) MessageBox.Show("B1 Lower Intermediate");
-            if (nota >= 60 && nota <= 74) MessageBox.Show("B2 Intermediate");
-            if (nota >= 75 && nota <= 89) MessageBox.Show("C1 Upper Intermediate");
-            if (nota >= 90 && nota <= 100) MessageBox.Show("C2 Advanced");
+            if (nota <= 40 && nota >= 59) Console.WriteLine("B1 Lower Intermediate");
+            if (nota <= 60 && nota >= 74) Console.WriteLine("B2 Intermediate");
+            if (nota <= 75 && nota >= 89) Console.WriteLine("C1 Upper Intermediate");
+            if (nota <= 90 && nota >= 100) Console.WriteLine("C2 Advanced");
         }
         public void Imprimir()
         {
@@ -44,11 +39,6 @@ namespace Cesar_9
             Console.WriteLine(edad);
             Console.Write("Nota: ");
             Console.WriteLine(nota);
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
