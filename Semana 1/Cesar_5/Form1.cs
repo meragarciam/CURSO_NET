@@ -31,7 +31,7 @@ namespace Cesar_6
         {
             //boton para sumar
             int num1, num2, resultado;
-            if ((textNumero1.Text == "") || (txtNumero2.Text == ""))
+            if ((txtNumero1.Text == "") || (txtNumero2.Text == ""))
             {
                 MessageBox.Show("Por favor rellene todos los campos");
             }
