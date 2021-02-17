@@ -1,0 +1,10 @@
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\bin\Debug\Cesar_12.exe.config
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\bin\Debug\Cesar_12.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\bin\Debug\Cesar_12.pdb
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\obj\Debug\Cesar_12.csprojAssemblyReference.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\obj\Debug\Cesar_12.Form1.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\obj\Debug\Cesar_12.Properties.Resources.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\obj\Debug\Cesar_12.csproj.GenerateResource.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\obj\Debug\Cesar_12.csproj.CoreCompileInputs.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\obj\Debug\Cesar_12.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\Semana 1\Cesar_12\obj\Debug\Cesar_12.pdb

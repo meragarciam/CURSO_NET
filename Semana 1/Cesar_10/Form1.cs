@@ -40,7 +40,12 @@ namespace Cesar_10
 
         private void buttonCalcular_Click(object sender, EventArgs e)
         {
-            textBoxTotal = myNomina.CalcularNomina(Convert.ToInt32(myNomina.pDiasLaborados), Convert.ToDecimal(myEmpleado.pSalarioDia)).ToString();
+            textBoxTotal.Text = myNomina.CalcularNomina(Convert.ToInt32(myNomina.pDiasLaborados), Convert.ToDecimal(myEmpleado.pSalarioDia)).ToString();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

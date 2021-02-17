@@ -8,16 +8,24 @@ namespace Cesar_11
 {
     class Profesor: Persona
     {
-        public string pNombre
+        
+        double dlbSueldo;
+       
+        public double pSueldo
         {
             get
             {
-                return strNombre;
+                return dlbSueldo;
             }
             set
             {
-                strNombre = value;
+                dlbSueldo = value;
             }
+        }
+        
+        public string Enseñar()
+        {
+            return  "esta enseñando";
         }
     }
 }

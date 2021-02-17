@@ -10,8 +10,8 @@ namespace Cesar_3
         private int edad;
         private string nombre;
 
-        public abstract string Recopilar();
-        public abstract string Recopilar1();
+      //  public abstract string Recopilar();
+     //   public abstract string Recopilar1();
   
     }
 }
