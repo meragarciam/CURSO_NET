@@ -1,0 +1,15 @@
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\bin\Debug\Mi primer WPF.exe.config
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\bin\Debug\Mi primer WPF.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\bin\Debug\Mi primer WPF.pdb
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi primer WPF.csprojAssemblyReference.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\MainWindow.g.cs
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\App.g.cs
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi primer WPF_MarkupCompile.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi primer WPF_MarkupCompile.lref
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\MainWindow.baml
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi primer WPF.g.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi_primer_WPF.Properties.Resources.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi primer WPF.csproj.GenerateResource.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi primer WPF.csproj.CoreCompileInputs.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi primer WPF.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Mi primer WPF\obj\Debug\Mi primer WPF.pdb
