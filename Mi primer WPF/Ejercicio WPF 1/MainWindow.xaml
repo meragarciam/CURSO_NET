@@ -5,27 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio_WPF_1"
         mc:Ignorable="d"
+        Background="SkyBlue"
         Icon="C:\\viajes.ico"
         Title="ABM Viajes" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="45*"/>
-            <ColumnDefinition Width="352*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <DockPanel Background="LightBlue" Margin="0,0,-0.4,0" Grid.ColumnSpan="2">
-            <WrapPanel Margin="0,0,0,342">
+        <WrapPanel Margin="0,0,-0.4,326" Grid.ColumnSpan="2">
                 <TextBlock Margin="10,10,0,0" Width="775" FontSize="20">Empresa:</TextBlock>
-                <ComboBox  Width="120" Margin="10,10,0,0" RenderTransformOrigin="0.5,0.5" Height="24" SelectionChanged="ComboBox_SelectionChanged" >
-                    <ComboBox.Background>
-                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
-                            <GradientStop Color="#FFF0F0F0" Offset="0"/>
-                            <GradientStop Color="#FF666565" Offset="1"/>
-                        </LinearGradientBrush>
-                    </ComboBox.Background>
+                <ComboBox  Text="MyCombo" Width="120" Margin="10,10,0,0" RenderTransformOrigin="0.5,0.5" Height="24" SelectionChanged="ComboBox_SelectionChanged" >
+                    <ComboBoxItem Name="CBI0" IsSelected="true">Chevaller</ComboBoxItem>
+                    <ComboBoxItem Name="CBI1">Halcón Viajes</ComboBoxItem>
+                    <ComboBoxItem Name="CBI2">Dreams</ComboBoxItem>
+                    <ComboBoxItem Name="CBI3">Sky Scanner</ComboBoxItem>
                 </ComboBox>
-                <TextBlock Margin="10,10,0,390" Width="775">Fecha de salida:</TextBlock>
+            </WrapPanel>
+            <WrapPanel Margin="0,99,-0.4,0" Grid.ColumnSpan="2">
+            <TextBlock Margin="10,10,0,0"  Width="300" FontSize="20"><Run Text="Fecha de salida:"/></TextBlock>
+            <TextBlock Margin="10,10,0,0" Width="300" FontSize="20"><Run Text="Fecha de llegada:"/></TextBlock>
+            <DatePicker Margin="10,10,0,0" Height="28" Width="223" RenderTransformOrigin="0.523,0.827" SelectedDate="2021-11-18" IsTodayHighlighted="False" SelectedDateFormat="Long"/>
+                
+                <DatePicker Margin="10,10,0,0" Height="28" Width="223" RenderTransformOrigin="0.523,0.827" SelectedDate="2021-11-18" IsTodayHighlighted="False" SelectedDateFormat="Long"/>
             </WrapPanel>
 
-        </DockPanel>
+
+
     </Grid>
 </Window>
