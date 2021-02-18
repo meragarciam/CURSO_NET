@@ -1,0 +1,15 @@
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\bin\Debug\Ejercicio WPF 1.exe.config
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\bin\Debug\Ejercicio WPF 1.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\bin\Debug\Ejercicio WPF 1.pdb
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio WPF 1.csprojAssemblyReference.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\MainWindow.g.cs
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\App.g.cs
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio WPF 1_MarkupCompile.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio WPF 1_MarkupCompile.lref
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\MainWindow.baml
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio WPF 1.g.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio_WPF_1.Properties.Resources.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio WPF 1.csproj.GenerateResource.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio WPF 1.csproj.CoreCompileInputs.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio WPF 1.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Ejercicio WPF 1\obj\Debug\Ejercicio WPF 1.pdb
