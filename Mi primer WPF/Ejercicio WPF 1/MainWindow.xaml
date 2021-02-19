@@ -13,24 +13,51 @@
             <ColumnDefinition/>
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <WrapPanel Margin="0,0,-0.4,326" Grid.ColumnSpan="2">
-                <TextBlock Margin="10,10,0,0" Width="775" FontSize="20">Empresa:</TextBlock>
-                <ComboBox  Text="MyCombo" Width="120" Margin="10,10,0,0" RenderTransformOrigin="0.5,0.5" Height="24" SelectionChanged="ComboBox_SelectionChanged" >
-                    <ComboBoxItem Name="CBI0" IsSelected="true">Chevaller</ComboBoxItem>
-                    <ComboBoxItem Name="CBI1">Halcón Viajes</ComboBoxItem>
-                    <ComboBoxItem Name="CBI2">Dreams</ComboBoxItem>
-                    <ComboBoxItem Name="CBI3">Sky Scanner</ComboBoxItem>
-                </ComboBox>
-            </WrapPanel>
-            <WrapPanel Margin="0,99,-0.4,0" Grid.ColumnSpan="2">
-            <TextBlock Margin="10,10,0,0"  Width="300" FontSize="20"><Run Text="Fecha de salida:"/></TextBlock>
+        <WrapPanel Margin="0,0,-0.4,344" Grid.ColumnSpan="2">
+            <TextBlock Margin="10,10,0,0" Width="775" FontSize="20">Empresa:</TextBlock>
+            <ComboBox x:Name="comboEmpresa"  Text="MyCombo" Width="120" Margin="10,10,0,0" RenderTransformOrigin="0.5,0.5" Height="24" SelectionChanged="ComboBox_SelectionChanged" >
+                <ComboBoxItem Name="CBI0">Chaveller</ComboBoxItem>
+                <ComboBoxItem Name="CBI1">Halcón Viajes</ComboBoxItem>
+                <ComboBoxItem Name="CBI2">Dreams</ComboBoxItem>
+                <ComboBoxItem Name="CBI3">Sky Scanner</ComboBoxItem>
+            </ComboBox>
+        </WrapPanel>
+        <WrapPanel Margin="0,76,-0.4,23" Grid.ColumnSpan="2">
+            <TextBlock Margin="10,10,0,0"  Width="244" FontSize="20"><Run Text="Fecha de salida:"/></TextBlock>
             <TextBlock Margin="10,10,0,0" Width="300" FontSize="20"><Run Text="Fecha de llegada:"/></TextBlock>
-            <DatePicker Margin="10,10,0,0" Height="28" Width="223" RenderTransformOrigin="0.523,0.827" SelectedDate="2021-11-18" IsTodayHighlighted="False" SelectedDateFormat="Long"/>
-                
-                <DatePicker Margin="10,10,0,0" Height="28" Width="223" RenderTransformOrigin="0.523,0.827" SelectedDate="2021-11-18" IsTodayHighlighted="False" SelectedDateFormat="Long"/>
+            <DatePicker x:Name="dateSalida" Margin="10,10,0,0" Height="28" Width="235" RenderTransformOrigin="0.523,0.827"  IsTodayHighlighted="False" SelectedDateFormat="Long"/>
+            <DatePicker x:Name="dateLlegada" Margin="10,10,0,0" Height="28" Width="223" RenderTransformOrigin="0.523,0.827"  IsTodayHighlighted="False" SelectedDateFormat="Long"/>
+        </WrapPanel>
+        <WrapPanel Margin="0,144,-0.4,184" Grid.ColumnSpan="2">
+            <TextBlock Margin="10,10,0,0"  Width="243" FontSize="20"><Run Text="Lugar de salida:"/></TextBlock>
+            <TextBlock Margin="10,10,0,0" Width="300" FontSize="20"><Run Text="Lugar de llegada:"/></TextBlock>
+            <ComboBox x:Name="comboLugarSalida" Text="MyCombo" Margin="10,10,0,0" Height="28" Width="239" RenderTransformOrigin="0.523,0.827" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem Name="CB0">Londres</ComboBoxItem>
+                <ComboBoxItem Name="CB1">Paris</ComboBoxItem>
+                <ComboBoxItem Name="CB2">Madrid</ComboBoxItem>
+                <ComboBoxItem Name="CB3">Berlín</ComboBoxItem>
+            </ComboBox>
+            <ComboBox x:Name="comboLugarLlegada" Text="MyCombo" Margin="10,10,0,0" Height="28" Width="217" RenderTransformOrigin="0.523,0.827" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem Name="C0">Londres</ComboBoxItem>
+                <ComboBoxItem Name="C1">Paris</ComboBoxItem>
+                <ComboBoxItem Name="C2">Madrid</ComboBoxItem>
+                <ComboBoxItem Name="C3">Berlín</ComboBoxItem>
+            </ComboBox>
+        </WrapPanel>
+        <GroupBox Header="Cantidad de personas:" Margin="10,236,618.6,53"/>
+        <RadioButton x:Name="radio1" Content="1 Persona" HorizontalAlignment="Left" Margin="40,266,0,0" VerticalAlignment="Top" />
+        <RadioButton x:Name="radio2" Content="2 Personas" HorizontalAlignment="Left" Margin="40,286,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radio3" Content="3 Personas" HorizontalAlignment="Left" Margin="40,306,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="radio4" Content="4 Personas" HorizontalAlignment="Left" Margin="40,326,0,0" VerticalAlignment="Top"/>
+        <GroupBox Header="Datos de persona responsable:" Margin="223,236,24.6,53">
+            <WrapPanel Margin="0,0,0.2,-12.6">
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Width="494"/>
+                <TextBox x:Name="textNombre" Height="23" TextWrapping="Wrap" Margin="10,2,0,0" Text="" Width="529" RenderTransformOrigin="0.582,1.326" TextChanged="textNombre_TextChanged"/>
+                <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Correo electrónico:" VerticalAlignment="Top" Width="494"/>
+                <TextBox x:Name="textCorreoelectronico" Height="23" TextWrapping="Wrap" Margin="10,5,0,0" Text="" Width="529" RenderTransformOrigin="0.582,1.326" TextChanged="textcorreoelectronico_TextChanged"/>
             </WrapPanel>
-
-
-
+        </GroupBox>
+        <Button Name="buttonCancelar" Content="Cancelar" Margin="10,376,457.6,10" RenderTransformOrigin="0.104,0.906" Click="buttonCancelar_Click"/>
+        <Button  Name="buttonAceptar" Content="Aceptar" Margin="377,376,90.6,10" RenderTransformOrigin="0.104,0.906" Click="buttonAceptar_Click"/>
     </Grid>
 </Window>
