@@ -1,0 +1,94 @@
+﻿<Window x:Class="MACRO_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MACRO_WPF"
+        mc:Ignorable="d"
+        Icon="C:\\farmacia.ico"
+        Title="Registros de Ventas de Almacén"  Height="526.198" Width="1001.9">
+    <Grid Margin="0,0,-6,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="172*"/>
+            <ColumnDefinition Width="225*"/>
+        </Grid.ColumnDefinitions>
+
+        <WrapPanel Margin="0,0,-0.4,324.8" >
+            <Image Source="farmacia.jpg" Width="114" Height="80" ScrollViewer.HorizontalScrollBarVisibility="Visible"/>
+            <TextBlock Margin="10,10,0,0" Width="193" FontSize="20"><Run Text="Ventas de Artículos"/></TextBlock>
+        </WrapPanel>
+        <GroupBox Header="Actualización de ingresos" HorizontalAlignment="Left" Height="385" Margin="10,102,0,0" VerticalAlignment="Top" Width="382">
+            <WrapPanel Margin="0,10,-12,-23">
+                <TextBlock TextWrapping="Wrap" Text="Fecha:" Height="29" Margin="5,5,0,0" />
+                <DatePicker x:Name="dateRegistro" HorizontalAlignment="Left"  Margin="31,5,0,0" Height="28" Width="273" />
+                <TextBlock TextWrapping="Wrap" Text="Descripción:" Height="29" Margin="5,5,0,0" />
+                <TextBox Name="tbMultiLine" TextWrapping="Wrap" AcceptsReturn="True"  Margin="0,5,0,0" VerticalScrollBarVisibility="Visible" Width="273" Height="65"/>
+                <TextBlock TextWrapping="Wrap" Text="Nombre:" Height="29" Margin="5,5,0,0" />
+                <TextBox x:Name="TxtNombre" Width="266" Margin="19,5,0,0" Height="23"/>
+                <TextBlock TextWrapping="Wrap" Text="Descuento:" Height="29" Margin="5,15,0,0" />
+                <ComboBox x:Name="Textdesc"  Text="MyCombo" Width="100" Margin="10,5,0,0" RenderTransformOrigin="0.5,0.5" Height="24"  >
+                    <ComboBoxItem Name="CBI0" Content="10%"/>
+                    <ComboBoxItem Name="CBI1" Content="12%"/>
+                    <ComboBoxItem Name="CBI2" Content="15%"/>
+                    
+                </ComboBox>
+                <TextBlock TextWrapping="Wrap" Text="IVA:" Height="29" Margin="5,15,0,0" />
+                <ComboBox x:Name="TextIVA"  Text="MyCombo1" Width="100" Margin="10,5,0,0" RenderTransformOrigin="0.5,0.5" Height="24"  >
+                    <ComboBoxItem Name="CB0" Content="0%"/>
+                    <ComboBoxItem Name="CB1" Content="4%"/>
+                    <ComboBoxItem Name="CB2" Content="10%"/>
+                    <ComboBoxItem Name="CB3" Content="21%"/>
+                </ComboBox>
+                <WrapPanel Height="158" Width="240">
+                    <TextBlock TextWrapping="Wrap" Text="Cantidad:" Height="29" Margin="5,10,0,0" />
+                    <TextBox x:Name="TxtVenta" Width="48" Margin="5,5,0,0" Height="23"/>
+                    <TextBlock TextWrapping="Wrap" Text="Precio/Uni:" Height="29" Margin="10,10,0,0" />
+                    <TextBox x:Name="PrecioUnit" Width="51" Margin="5,5,0,0" Height="23"/>
+                    <TextBlock TextWrapping="Wrap" Text="PAGADO:" Height="29" Margin="5,10,0,0" />
+                    <TextBox x:Name="TextPagado" Width="162" Margin="5,5,0,0" Height="29"/>
+                    <TextBlock TextWrapping="Wrap" Text="TOTAL:" FontSize="15"  Height="29" Margin="5,10,0,0" />
+                    <TextBox x:Name="TextTotal" Width="157" Margin="10,5,0,0" Height="29" RenderTransformOrigin="0.5,0.5">
+                        <TextBox.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="0.375"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </TextBox.RenderTransform>
+                    </TextBox>
+                    <Button Height="21" Width="60" Margin="5,5,0,0" Foreground="White" Background="DeepSkyBlue" Content="Nuevo"/>
+                    <Button Height="21" Width="60" Margin="15,5,0,0" Foreground="White" Background="DeepSkyBlue" Content="Agregar" Click="Button_Click"/>
+                    <Button Height="21" Width="60" Margin="15,5,0,0" Foreground="White" Background="DeepSkyBlue" Content="Cancelar"/>
+                </WrapPanel>
+                <WrapPanel Height="160" Width="126" >
+                    <Image Source="impresora.jpg" Width="83" Height="97"  ScrollViewer.HorizontalScrollBarVisibility="Visible" RenderTransformOrigin="0.5,0.572"></Image>
+                    <Button  Width="75"  Background="Blue" Content="Calculo" Height="30" Margin="5,10,0,0" Foreground="White" FontSize="15" Click="Button_Click_1"/>
+                </WrapPanel>
+            </WrapPanel>
+        </GroupBox>
+        <TabControl TabStripPlacement="Top" Margin="22,0,10,0" Grid.Column="1" Height="487" VerticalAlignment="Top"  >
+            <TabItem Header="Artículos Agregados" RenderTransformOrigin="1.092,-3.811">
+                <StackPanel Margin="0,0,0,-50">
+                    <ListView Name="lvdatos" HorizontalAlignment="Stretch" Margin="1,0,10,79.2" Height="318">
+                        <ListView.View>
+                            <GridView AllowsColumnReorder="True">
+                                <GridViewColumn Header="Nombre" DisplayMemberBinding="{Binding Nombre}" Width="150"/>
+                                <GridViewColumn Header="Cantidad de venta" DisplayMemberBinding="{Binding Venta}" Width="190"/>
+                                <GridViewColumn Header="Precio Unitario" DisplayMemberBinding="{Binding PecUni}" Width="100"/>
+                                <GridViewColumn Header="Descuento" DisplayMemberBinding="{Binding Descuento}" Width="70"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                    <WrapPanel>
+                        <Button  Height="21" Width="60" Margin="10,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Eliminar" RenderTransformOrigin="1.808,0.571" />
+                        <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Imprimir" />
+                        <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Salir" />
+                        <TextBlock TextWrapping="Wrap" Text="Total Registros:" Height="29" Margin="125,10,0,0" Foreground="Red" FontSize="15"  />
+                        <TextBox Width="30" Margin="10,5,0,0" Height="24"/>
+                    </WrapPanel>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
