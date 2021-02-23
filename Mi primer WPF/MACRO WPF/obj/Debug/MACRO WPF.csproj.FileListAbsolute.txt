@@ -13,3 +13,10 @@ C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO 
 C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO WPF.csproj.CoreCompileInputs.cache
 C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO WPF.exe
 C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO WPF.pdb
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO WPF.csprojAssemblyReference.cache
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MainWindow.g.cs
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\App.g.cs
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO WPF_MarkupCompile.cache
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO WPF_MarkupCompile.lref
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO WPF.exe
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\MACRO WPF\obj\Debug\MACRO WPF.pdb

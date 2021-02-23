@@ -12,3 +12,10 @@ C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Hotel\obj\Debug\VideoClub_
 C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Hotel\obj\Debug\VideoClub_Madison.csproj.CoreCompileInputs.cache
 C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Hotel\obj\Debug\Hotel.exe
 C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\Hotel\obj\Debug\Hotel.pdb
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\VideoClub_Madison.csprojAssemblyReference.cache
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\MainWindow.g.cs
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\App.g.cs
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel_MarkupCompile.cache
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel_MarkupCompile.lref
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel.exe
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel.pdb

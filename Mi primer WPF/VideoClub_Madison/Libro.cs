@@ -26,6 +26,5 @@ namespace VideoClub_Madison
             set { Isbn = value; }
         }
 
-
     }
 }

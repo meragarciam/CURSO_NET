@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:VideoClub_Madison"
         mc:Ignorable="d"
         Background="DarkOliveGreen"
-        Icon="C:\\icono.jpg"
+        
         Title="FORMULARIO DE PRODUCTOS" Height="450" Width="800">
 <Grid Margin="0,0,-0.4,0">
     <WrapPanel Height="80" Width="791" Margin="3,0,-0.4,340">
@@ -14,27 +14,27 @@
     </WrapPanel>
     <WrapPanel Margin="10,80,399,185" Background="Coral">
         <TextBlock TextWrapping="Wrap" Text="CÓDIGO" TextAlignment="Center" Height="22" Background="DarkOliveGreen" Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="103" Margin="20,20,0,0"/>
+        <TextBox x:Name="TxtCodigo" Height="23" TextWrapping="Wrap"  Width="103" Margin="20,20,0,0"/>
         <TextBlock TextWrapping="Wrap" Text="PRECIO" TextAlignment="Center" Height="22" Background="DarkOliveGreen" Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="99" Margin="20,20,0,0"/>
+        <TextBox x:Name="TxtPrecio" Height="23" TextWrapping="Wrap"  Width="99" Margin="20,20,0,0"/>
         <TextBlock TextWrapping="Wrap" Text="DESCRIPCIÓN" TextAlignment="Center" Height="22" Background="DarkOliveGreen" Margin="20,20,0,0"></TextBlock>
-        <TextBox Name="tbMultiLine" TextWrapping="Wrap" AcceptsReturn="True"  Margin="20,10,0,0" VerticalScrollBarVisibility="Visible" Width="125" Height="65"/>
+        <TextBox x:Name="TxtDescripcion" TextWrapping="Wrap" AcceptsReturn="True"  Margin="20,10,0,0" VerticalScrollBarVisibility="Visible" Width="125" Height="65"/>
         <WrapPanel Width="133" Height="89">
-            <RadioButton Content="COMPACTDISK" Margin="10,25,0,10"/>
-            <RadioButton Content="LIBRO" Margin="10,0,0,0" Width="102" />
+            <RadioButton x:Name="RadioDisc" Content="COMPACTDISK" Margin="10,25,0,10"/>
+            <RadioButton x:Name="RadioLibro" Content="LIBRO" Margin="10,0,0,0" Width="102" />
         </WrapPanel>
     </WrapPanel>
     <WrapPanel Margin="400,80,221,185" Background="DarkRed">
         <TextBlock TextWrapping="Wrap" Text="ARTISTA" TextAlignment="Center" Height="22" Foreground="WHITE"  Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
+        <TextBox x:Name="TxtArtista" Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
         <TextBlock TextWrapping="Wrap" Text="DISCO" TextAlignment="Center" Height="22" Foreground="WHITE"  Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
+        <TextBox x:Name="TxtDisco" Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
     </WrapPanel>
     <WrapPanel Margin="599,80,9.6,185" Background="DarkRed">
         <TextBlock TextWrapping="Wrap" Text="AUTOR" TextAlignment="Center" Height="22" Foreground="WHITE"  Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
+        <TextBox x:Name="TxtAutor" Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
         <TextBlock TextWrapping="Wrap" Text="ISBN" TextAlignment="Center" Height="22" Foreground="WHITE"  Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
+        <TextBox x:Name="TxtISBN" Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
     </WrapPanel>
     <StackPanel Margin="0,240,196,10">
         <ListView x:Name="lvdatos" HorizontalAlignment="Stretch"  Height="175" Margin="10,0,-0.4,0">
@@ -50,7 +50,7 @@
         </ListView>
     </StackPanel>
     <WrapPanel RenderTransformOrigin="0.969,0.643" Margin="603,262,42,45">
-            <Button Content="AÑADIR" Width="75" Click="Button_Click_1" Margin="40,15,0,0" Height="30"/>
+            <Button Content="AÑADIR" Width="75" Click="Button_Click" Margin="40,15,0,0" Height="30"/>
             <Button Content="SALIR" Width="75" Click="Button_Click_1" Margin="40,20,0,0" Height="30"/>
 
         </WrapPanel>
