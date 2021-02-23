@@ -81,7 +81,7 @@
                         </ListView.View>
                     </ListView>
                     <WrapPanel>
-                        <Button  Height="21" Width="60" Margin="10,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Eliminar" RenderTransformOrigin="1.808,0.571" />
+                        <Button  Height="21" Width="60" Margin="10,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Eliminar" RenderTransformOrigin="1.808,0.571" Click="Button_Click_2" />
                         <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Imprimir" />
                         <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Salir" />
                         <TextBlock TextWrapping="Wrap" Text="Total Registros:" Height="29" Margin="125,10,0,0" Foreground="Red" FontSize="15"  />

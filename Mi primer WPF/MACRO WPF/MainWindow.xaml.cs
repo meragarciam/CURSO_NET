@@ -45,6 +45,7 @@ namespace MACRO_WPF
 
 
 
+
         public void Button_Click(object sender, RoutedEventArgs e)
         {
             
@@ -58,17 +59,17 @@ namespace MACRO_WPF
             string strPagado;
            
 
-            if ((validaCadena(dateRegistro.SelectedDate.ToString(), "FECHA DE REGISTRO") == true) && (validaCadena(tbMultiLine.Text, "DESCRIPCIÓN") == true) && (validaCadena(TxtNombre.Text, "NOMBRE") == true) && (validaCadena(Textdesc.SelectedItem.ToString(), "DESCUENTO") == true) && (validaCadena(TextIVA.SelectedItem.ToString(), "IVA") == true) && (validaCadena(TextPagado.ToString(), "PAGADO") == true) )
+            if ((validaCadena(dateRegistro.SelectedDate.ToString(), "FECHA DE REGISTRO") == true) && (validaCadena(tbMultiLine.Text, "DESCRIPCIÓN") == true) && (validaCadena(TxtNombre.Text, "NOMBRE") == true)   && (validaCadena(TextPagado.Text, "PAGADO") == true) && (validaCadena(TxtVenta.Text, "CANTIDAD") == true) && (validaCadena(PrecioUnit.Text, "PRECIO UNITARIO") == true))
             {
-                try 
-                { 
-                    dtmFechaRegistro = dateRegistro.SelectedDate.ToString().Substring(38);
+                if ((Textdesc.SelectedItem != null) && (TextIVA.SelectedItem != null))
+                {
+
+                    dtmFechaRegistro = dateRegistro.SelectedDate.ToString();
                     strDescripcion = tbMultiLine.Text;
                     strNombre = TxtNombre.Text;
-                    strDescuento = Textdesc.SelectedItem.ToString().Substring(38);
-                    strIva = TextIVA.SelectedItem.ToString().Substring(38);
+
                     strPagado = TextPagado.Text;
-                    strCantidad= TxtVenta.Text;
+                    strCantidad = TxtVenta.Text;
                     strPrecioUnitario = PrecioUnit.Text;
 
                     lvdatos.Items.Add(new
@@ -79,10 +80,9 @@ namespace MACRO_WPF
                         Descuento = Textdesc.Text
                     });
                 }
-                catch
-                {
-                    MessageBox.Show("Hay algún dato erróneo, revise los campos introducidos");
-                }
+                else MessageBox.Show("O BIEN TE FALTA EL IVA O EL DESCUENTO...");
+
+
             }
 
         }
@@ -96,21 +96,34 @@ namespace MACRO_WPF
                 double dblIva;
                 double dblAplicarDesc;
                 double dblAplicarIva;
+          
                 double dblVenta = Convert.ToDouble(TxtVenta.Text);
                 double dblPrecioUnidad = Convert.ToDouble(PrecioUnit.Text);
                 dblImporte = dblVenta * dblPrecioUnidad;
-                dblDescuento = Convert.ToDouble(Textdesc.SelectedItem); 
-                dblIva = Convert.ToDouble(TextIVA.SelectedItem);
-                dblAplicarDesc = dblImporte - (dblImporte * dblDescuento);
+            String cadena = Textdesc.SelectedItem.ToString();
+            String cadena2 = TextIVA.SelectedItem.ToString();
+            dblDescuento = Convert.ToDouble(cadena.Substring(38,2));
+                dblIva = Convert.ToDouble(cadena2.Substring(38, 2));
+            dblAplicarDesc = dblImporte - (dblImporte * dblDescuento);
                 dblAplicarIva = dblAplicarDesc + (dblIva * dblImporte);
                 string strTotal = dblAplicarIva.ToString();
-                strTotal = TextTotal.Text;
+                TextTotal.Text = strTotal;
+          
+          
+                MessageBox.Show("Algo ha fallado");
+          
         }
-            
-            
-            
-           
 
-        
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                lvdatos.Items.RemoveAt(lvdatos.SelectedIndex);
+            }
+            catch 
+                { MessageBox.Show("LA LISTA ESTA VACIA");
+            }
+          
+        }
     }
 }
