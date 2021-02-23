@@ -12,7 +12,7 @@
     <WrapPanel Height="80" Width="791" Margin="3,0,-0.4,340">
         <TextBlock TextWrapping="Wrap" Text="VIDEOCLUB MADISON" Height="38" Width="791" TextAlignment="Center" Margin="0,20,0,0" Foreground="White" FontSize="25" FontFamily="Courier"/>
     </WrapPanel>
-    <WrapPanel Margin="0,80,406.6,185" Background="Coral">
+    <WrapPanel Margin="10,80,399,185" Background="Coral">
         <TextBlock TextWrapping="Wrap" Text="CÓDIGO" TextAlignment="Center" Height="22" Background="DarkOliveGreen" Margin="20,20,0,0"></TextBlock>
         <TextBox Height="23" TextWrapping="Wrap"  Width="103" Margin="20,20,0,0"/>
         <TextBlock TextWrapping="Wrap" Text="PRECIO" TextAlignment="Center" Height="22" Background="DarkOliveGreen" Margin="20,20,0,0"></TextBlock>
@@ -24,20 +24,20 @@
             <RadioButton Content="LIBRO" Margin="10,0,0,0" Width="102" />
         </WrapPanel>
     </WrapPanel>
-    <WrapPanel Margin="400,80,216.6,185" Background="DarkRed">
+    <WrapPanel Margin="400,80,221,185" Background="DarkRed">
         <TextBlock TextWrapping="Wrap" Text="ARTISTA" TextAlignment="Center" Height="22" Foreground="WHITE"  Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="145" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
+        <TextBox Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
         <TextBlock TextWrapping="Wrap" Text="DISCO" TextAlignment="Center" Height="22" Foreground="WHITE"  Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="145" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
+        <TextBox Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
     </WrapPanel>
     <WrapPanel Margin="599,80,9.6,185" Background="DarkRed">
         <TextBlock TextWrapping="Wrap" Text="AUTOR" TextAlignment="Center" Height="22" Foreground="WHITE"  Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="145" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
+        <TextBox Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
         <TextBlock TextWrapping="Wrap" Text="ISBN" TextAlignment="Center" Height="22" Foreground="WHITE"  Margin="20,20,0,0"></TextBlock>
-        <TextBox Height="23" TextWrapping="Wrap"  Width="145" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
+        <TextBox Height="23" TextWrapping="Wrap"  Width="135" Margin="20,5,0,0" Background="Orange" BorderBrush="White" BorderThickness="2"/>
     </WrapPanel>
     <StackPanel Margin="0,240,196,10">
-        <ListView x:Name="lvdatos" HorizontalAlignment="Stretch"  Height="175" Margin="0,0,-0.4,0">
+        <ListView x:Name="lvdatos" HorizontalAlignment="Stretch"  Height="175" Margin="10,0,-0.4,0">
             <ListView.View>
                 <GridView AllowsColumnReorder="True">
                     <GridViewColumn Header="CODIGO" DisplayMemberBinding="{Binding Codigo}" Width="100"/>
