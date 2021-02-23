@@ -79,6 +79,10 @@ namespace MACRO_WPF
                         PecUni = PrecioUnit.Text,
                         Descuento = Textdesc.Text
                     });
+
+                    int intCont=1+Convert.ToInt32(TextCont.Text);
+                    TextCont.Text = intCont.ToString();
+
                 }
                 else MessageBox.Show("O BIEN TE FALTA EL IVA O EL DESCUENTO...");
 
@@ -100,18 +104,16 @@ namespace MACRO_WPF
                 double dblVenta = Convert.ToDouble(TxtVenta.Text);
                 double dblPrecioUnidad = Convert.ToDouble(PrecioUnit.Text);
                 dblImporte = dblVenta * dblPrecioUnidad;
-            String cadena = Textdesc.SelectedItem.ToString();
-            String cadena2 = TextIVA.SelectedItem.ToString();
-            dblDescuento = Convert.ToDouble(cadena.Substring(38,2));
-                dblIva = Convert.ToDouble(cadena2.Substring(38, 2));
-            dblAplicarDesc = dblImporte - (dblImporte * dblDescuento);
+                String cadena = Textdesc.SelectedItem.ToString();
+                String cadena2 = TextIVA.SelectedItem.ToString();
+                dblDescuento = Convert.ToDouble(cadena.Substring(38,2))/100;
+                dblIva = Convert.ToDouble(cadena2.Substring(38, 2))/100;
+                dblAplicarDesc = dblImporte - (dblImporte * dblDescuento);
                 dblAplicarIva = dblAplicarDesc + (dblIva * dblImporte);
                 string strTotal = dblAplicarIva.ToString();
                 TextTotal.Text = strTotal;
           
-          
-                MessageBox.Show("Algo ha fallado");
-          
+           
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -119,11 +121,45 @@ namespace MACRO_WPF
             try
             {
                 lvdatos.Items.RemoveAt(lvdatos.SelectedIndex);
+
+                int intCont =  Convert.ToInt32(TextCont.Text)-1;
+                TextCont.Text = intCont.ToString();
+
+
             }
             catch 
-                { MessageBox.Show("LA LISTA ESTA VACIA");
+                { 
+                MessageBox.Show("SELECCIONA UNA FILA");
             }
           
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            if(MessageBox.Show("¿Desea cerrar la aplicación?", "Confirmación", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                App.Current.Shutdown();
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            PrintDialog pDialog = new PrintDialog();
+            pDialog.ShowDialog();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            PrintDialog pDialog = new PrintDialog();
+            pDialog.ShowDialog();
+        }
+
+        private void Button_Click_6(object sender, RoutedEventArgs e)
+        {
+            tbMultiLine.Clear();
+            TxtNombre.Clear();
+            TxtVenta.Clear();
+            PrecioUnit.Clear();
+            TextPagado.Clear();
+            TextTotal.Clear();
+          
     }
 }

@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WPF_2
+namespace VideoClub_Madison
 {
     /// <summary>
     /// Lógica de interacción para MainWindow.xaml
@@ -25,7 +25,17 @@ namespace WPF_2
             InitializeComponent();
         }
 
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+
+        }
+
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
 
         }

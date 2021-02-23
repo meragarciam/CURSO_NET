@@ -23,7 +23,7 @@
         <DockPanel LastChildFill="True" Margin="2,97,-2,202" Background="Gray">
             <WrapPanel Margin="0,0,0,10.2">
                 <TextBlock TextAlignment="Left" FontFamily="Arial" FontSize="15" FontStyle="Italic" Padding="0,10,0,0" Margin="0,0,0,0">¿Cómo quiere el café?</TextBlock>
-                <Button  Width="135" RenderTransformOrigin="-0.65,0.96" Margin="15,0,0,0" Content="Con leche" Height="26"/>
+                <Button  Width="135" RenderTransformOrigin="-0.65,0.96" Margin="15,0,0,0" Content="Con leche" Height="26" Click="Button_Click"/>
                 <Button  Width="135" RenderTransformOrigin="-0.65,0.96" Margin="20,0,0,0" Content="Cortado"/>
                 <Button  Width="135" RenderTransformOrigin="-0.65,0.96" Margin="20,0,0,0" Content="Capichino"/>
                 <Button  Width="135" RenderTransformOrigin="-0.65,0.96" Margin="20,0,0,0" Content="Carajillo"/>

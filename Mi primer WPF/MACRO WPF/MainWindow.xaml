@@ -30,12 +30,12 @@
                     <ComboBoxItem Name="CBI0" Content="10%"/>
                     <ComboBoxItem Name="CBI1" Content="12%"/>
                     <ComboBoxItem Name="CBI2" Content="15%"/>
-                    
+
                 </ComboBox>
                 <TextBlock TextWrapping="Wrap" Text="IVA:" Height="29" Margin="5,15,0,0" />
                 <ComboBox x:Name="TextIVA"  Text="MyCombo1" Width="100" Margin="10,5,0,0" RenderTransformOrigin="0.5,0.5" Height="24"  >
-                    <ComboBoxItem Name="CB0" Content="0%"/>
-                    <ComboBoxItem Name="CB1" Content="4%"/>
+                    <ComboBoxItem Name="CB0" Content="00%"/>
+                    <ComboBoxItem Name="CB1" Content="04%"/>
                     <ComboBoxItem Name="CB2" Content="10%"/>
                     <ComboBoxItem Name="CB3" Content="21%"/>
                 </ComboBox>
@@ -57,12 +57,24 @@
                             </TransformGroup>
                         </TextBox.RenderTransform>
                     </TextBox>
-                    <Button Height="21" Width="60" Margin="5,5,0,0" Foreground="White" Background="DeepSkyBlue" Content="Nuevo"/>
+                    <Button Height="21" Width="60" Margin="5,5,0,0" Foreground="White" Background="DeepSkyBlue" Content="Nuevo" Click="Button_Click_6"/>
                     <Button Height="21" Width="60" Margin="15,5,0,0" Foreground="White" Background="DeepSkyBlue" Content="Agregar" Click="Button_Click"/>
                     <Button Height="21" Width="60" Margin="15,5,0,0" Foreground="White" Background="DeepSkyBlue" Content="Cancelar"/>
                 </WrapPanel>
-                <WrapPanel Height="160" Width="126" >
-                    <Image Source="impresora.jpg" Width="83" Height="97"  ScrollViewer.HorizontalScrollBarVisibility="Visible" RenderTransformOrigin="0.5,0.572"></Image>
+                <WrapPanel Height="148" Width="111" >
+
+
+                    <Image Source="impresora.jpg" Width="83" Height="97"  ScrollViewer.HorizontalScrollBarVisibility="Visible" RenderTransformOrigin="0.5,0.572">
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleX="-1.389"/>
+                                <RotateTransform/>
+                                <TranslateTransform X="-1.345"/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Button  Width="75" Content="Imprimir" Margin="2,-77,0,0" Height="20" Click="Button_Click_4"/>
                     <Button  Width="75"  Background="Blue" Content="Calculo" Height="30" Margin="5,10,0,0" Foreground="White" FontSize="15" Click="Button_Click_1"/>
                 </WrapPanel>
             </WrapPanel>
@@ -82,10 +94,10 @@
                     </ListView>
                     <WrapPanel>
                         <Button  Height="21" Width="60" Margin="10,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Eliminar" RenderTransformOrigin="1.808,0.571" Click="Button_Click_2" />
-                        <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Imprimir" />
-                        <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Salir" />
+                        <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Imprimir" RenderTransformOrigin="0.5,0.505" Click="Button_Click_5" />
+                        <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Salir" Click="Button_Click_3" />
                         <TextBlock TextWrapping="Wrap" Text="Total Registros:" Height="29" Margin="125,10,0,0" Foreground="Red" FontSize="15"  />
-                        <TextBox Width="30" Margin="10,5,0,0" Height="24"/>
+                        <TextBox x:Name="TextCont" Text="0" Width="30" Margin="10,5,0,0" Height="24"/>
                     </WrapPanel>
                 </StackPanel>
             </TabItem>
