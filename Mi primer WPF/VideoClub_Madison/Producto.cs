@@ -6,7 +6,32 @@ using System.Threading.Tasks;
 
 namespace VideoClub_Madison
 {
-    class Producto
+    public class Producto
     {
+        private int Codigo;
+        private double Precio;
+        private string Descripcion;
+
+        public Producto(int codigo, double precio, string descripcion)
+        {
+            Codigo = codigo;
+            Precio = precio;
+            Descripcion = descripcion;
+        }
+        public int MCodigo
+        {
+            get { return Codigo; }
+            set { Codigo = value; }
+        }
+        public double MPrecio
+        {
+            get { return Precio; }
+            set { Precio = value; }
+        }
+        public string MDescripcion
+        {
+            get { return Descripcion; }
+            set { Descripcion = value; }
+        }
     }
 }

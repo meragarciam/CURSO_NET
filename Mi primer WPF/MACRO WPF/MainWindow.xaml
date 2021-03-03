@@ -95,7 +95,7 @@
                     <WrapPanel>
                         <Button  Height="21" Width="60" Margin="10,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Eliminar" RenderTransformOrigin="1.808,0.571" Click="Button_Click_2" />
                         <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Imprimir" RenderTransformOrigin="0.5,0.505" Click="Button_Click_5" />
-                        <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Salir" Click="Button_Click_3" />
+                        <Button  Height="21" Width="60" Margin="30,0,0,0" Foreground="White" Background="DeepSkyBlue" Content="Salir" Click="Button_Click_3" RenderTransformOrigin="0.5,0.505" />
                         <TextBlock TextWrapping="Wrap" Text="Total Registros:" Height="29" Margin="125,10,0,0" Foreground="Red" FontSize="15"  />
                         <TextBox x:Name="TextCont" Text="0" Width="30" Margin="10,5,0,0" Height="24"/>
                     </WrapPanel>

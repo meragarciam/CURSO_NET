@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ejercicio WPF 1", "Ejercici
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MACRO WPF", "MACRO WPF\MACRO WPF.csproj", "{C22371CD-EDA2-4322-B4FD-472850143CCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoClub_Madison", "Hotel\VideoClub_Madison.csproj", "{6D41614F-27D6-4C6D-B7F4-09124E985FF1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VideoClub_Madison", "VideoClub_Madison\VideoClub_Madison.csproj", "{6D41614F-27D6-4C6D-B7F4-09124E985FF1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
