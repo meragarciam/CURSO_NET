@@ -1,0 +1,10 @@
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\bin\Debug\HUCANET.exe.config
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\bin\Debug\HUCANET.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\bin\Debug\HUCANET.pdb
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.csprojAssemblyReference.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.Form1.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.Properties.Resources.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.csproj.GenerateResource.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.csproj.CoreCompileInputs.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.pdb

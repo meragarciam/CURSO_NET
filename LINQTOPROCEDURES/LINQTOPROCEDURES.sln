@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EJEMPLO", "EJEMPLO\EJEMPLO.csproj", "{18628AF0-2CC9-4FF1-BAA4-04BFAB0A9722}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HUCANET", "HUCANET\HUCANET.csproj", "{2C46435F-A28F-4C9B-BB2E-3A7AC2D87BEC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{18628AF0-2CC9-4FF1-BAA4-04BFAB0A9722}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18628AF0-2CC9-4FF1-BAA4-04BFAB0A9722}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18628AF0-2CC9-4FF1-BAA4-04BFAB0A9722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C46435F-A28F-4C9B-BB2E-3A7AC2D87BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C46435F-A28F-4C9B-BB2E-3A7AC2D87BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C46435F-A28F-4C9B-BB2E-3A7AC2D87BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C46435F-A28F-4C9B-BB2E-3A7AC2D87BEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

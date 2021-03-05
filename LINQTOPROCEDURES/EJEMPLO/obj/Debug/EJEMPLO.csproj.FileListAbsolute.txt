@@ -1,0 +1,10 @@
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\bin\Debug\EJEMPLO.exe.config
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\bin\Debug\EJEMPLO.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\bin\Debug\EJEMPLO.pdb
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\obj\Debug\EJEMPLO.csprojAssemblyReference.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\obj\Debug\EJEMPLO.Form1.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\obj\Debug\EJEMPLO.Properties.Resources.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\obj\Debug\EJEMPLO.csproj.GenerateResource.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\obj\Debug\EJEMPLO.csproj.CoreCompileInputs.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\obj\Debug\EJEMPLO.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\EJEMPLO\obj\Debug\EJEMPLO.pdb

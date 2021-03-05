@@ -4,17 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
 C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\
+=======
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\
+>>>>>>> b7f393a8a8ed5dea3fa32102159fe4d537cc6b3f
 Hotel
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
 C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\App.xaml
 11151548125
 
+9410343140
+=======
+C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\App.xaml
+11151548125
+
 81252702507
+>>>>>>> b7f393a8a8ed5dea3fa32102159fe4d537cc6b3f
 13-1505183044
 MainWindow.xaml;
 
-False
+True
 

@@ -49,11 +49,16 @@ namespace VideoClub_Madison
             string strIsbn;
 
 
+<<<<<<< HEAD
             if (((validaCadena(TxtCodigo.Text, "CODIGO") == true) && (validaCadena(TxtDescripcion.Text, "DESCRIPCIÓN") == true) && (validaCadena(TxtPrecio.Text, "PRECIO") == true)) && ((validaCadena(TxtArtista.Text, "ARTISTA") == true) && (validaCadena(TxtDisco.Text, "DISCO") == true)) || ((validaCadena(TxtAutor.Text, "AUTOR") == true) && (validaCadena(TxtISBN.Text, "ISBN") == true)))
+=======
+            if (((validaCadena(TxtCodigo.Text, "CODIGO") == true) && (validaCadena(TxtDescripcion.Text, "DESCRIPCIÓN") == true) && (validaCadena(TxtPrecio.Text, "PRECIO") == true)) && ((validaCadena(TxtArtista.Text, "ARTISTA") == true) && (validaCadena(TxtDisco.Text, "DISCO") == true)) || ((validaCadena(TxtAutor.Text, "AUTOR") == true) && (validaCadena(TxtIsbn.Text, "ISBN") == true)))
+>>>>>>> b7f393a8a8ed5dea3fa32102159fe4d537cc6b3f
             {
                 if ((RadioDisc.IsChecked != false) || (RadioLibro.IsChecked != false))
                 {
 
+<<<<<<< HEAD
                     strCodigo = TxtCodigo.Text;
                     strPrecio = TxtPrecio.Text;
                     strDescripcion = TxtDescripcion.Text;
@@ -75,14 +80,43 @@ namespace VideoClub_Madison
 
                 }
                 else MessageBox.Show("O BIEN TE FALTA EL IVA O EL DESCUENTO...");
+=======
+                    dtmFechaRegistro = dateRegistro.SelectedDate.ToString();
+                    strDescripcion = tbMultiLine.Text;
+                    strNombre = TxtNombre.Text;
+
+                    strPagado = TextPagado.Text;
+                    strCantidad = TxtVenta.Text;
+                    strPrecioUnitario = PrecioUnit.Text;
+
+                    lvdatos.Items.Add(new
+                    {
+                        Nombre = TxtNombre.Text,
+                        Venta = TxtVenta.Text,
+                        PecUni = PrecioUnit.Text,
+                        Descuento = Textdesc.Text
+                    });
+
+                    int intCont = 1 + Convert.ToInt32(TextCont.Text);
+                    TextCont.Text = intCont.ToString();
+
+                }
+                else MessageBox.Show("O BIEN TE FALTA EL IVA O EL DESCUENTO...");
+
+
+>>>>>>> b7f393a8a8ed5dea3fa32102159fe4d537cc6b3f
             }
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             if (MessageBox.Show("¿Desea cerrar la aplicación?", "Confirmación", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+<<<<<<< HEAD
                 Application.Current.Shutdown();
 
+=======
+                App.Current.Shutdown();
+>>>>>>> b7f393a8a8ed5dea3fa32102159fe4d537cc6b3f
         }
     }
 }

@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="LINQ" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=CADAVILES08\SQLEXPRESS02;Initial Catalog=LINQ;Integrated Security=True" SettingsObjectName="HUCANET.Properties.Settings" SettingsPropertyName="LINQConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Enfermo" Member="Enfermo">
+    <Type Name="Enfermo">
+      <Column Name="inscripcion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Apellido" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Dir" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha_Nac" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="S" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="NSS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cod_Hospital" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.SP_InsertaEnfermo" Method="SP_InsertaEnfermo">
+    <Parameter Name="inscripcion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Apellido" Parameter="apellido" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Fecha_Nac" Parameter="fecha_Nac" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="S" Parameter="s" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="NSS" Parameter="nSS" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_EliminarEnfermo" Method="SP_EliminarEnfermo">
+    <Parameter Name="inscripcion" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.SP_MostrarEnfermo" Method="SP_MostrarEnfermo">
+    <Parameter Name="inscripcion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Apellido" Parameter="apellido" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Fecha_Nac" Parameter="fecha_Nac" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="S" Parameter="s" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="NSS" Parameter="nSS" Type="System.Int32" DbType="Int" />
+    <ElementType Name="SP_MostrarEnfermoResult">
+      <Column Name="inscripcion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Apellido" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Dir" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha_Nac" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="S" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="NSS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cod_Hospital" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ListarEnfermo" Method="SP_ListarEnfermo">
+    <ElementType Name="SP_ListarEnfermoResult">
+      <Column Name="inscripcion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Apellido" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Direccion" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Dir" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fecha_Nac" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="S" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="NSS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cod_Hospital" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.SP_ModificarEnferno" Method="SP_ModificarEnferno">
+    <Parameter Name="inscripcion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="Apellido" Parameter="apellido" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Direccion" Parameter="direccion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Fecha_Nac" Parameter="fecha_Nac" Type="System.DateTime" DbType="SmallDateTime" />
+    <Parameter Name="S" Parameter="s" Type="System.String" DbType="VarChar(2)" />
+    <Parameter Name="NSS" Parameter="nSS" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>

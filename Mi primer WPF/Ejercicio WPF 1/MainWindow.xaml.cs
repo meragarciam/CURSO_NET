@@ -124,10 +124,5 @@ namespace Ejercicio_WPF_1
             //    this.Close();
             //}
         }
-
-        private void radio2_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }

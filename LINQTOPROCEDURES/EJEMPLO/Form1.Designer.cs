@@ -130,6 +130,7 @@ namespace EJEMPLO
             this.buttonGuardar.TabIndex = 9;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // buttonActualizar
             // 
@@ -139,6 +140,7 @@ namespace EJEMPLO
             this.buttonActualizar.TabIndex = 10;
             this.buttonActualizar.Text = "Actualizar";
             this.buttonActualizar.UseVisualStyleBackColor = true;
+            this.buttonActualizar.Click += new System.EventHandler(this.buttonActualizar_Click);
             // 
             // buttonEliminar
             // 
@@ -148,6 +150,7 @@ namespace EJEMPLO
             this.buttonEliminar.TabIndex = 11;
             this.buttonEliminar.Text = "Eliminar";
             this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // label4
             // 
