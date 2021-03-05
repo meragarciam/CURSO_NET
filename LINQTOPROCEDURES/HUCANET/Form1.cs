@@ -84,7 +84,7 @@ namespace HUCANET
             }
             else strSexo = "F";
 
-            EnfermoLinq.SP_ModificarEnferno(int.Parse(textInscripcion.Text), textNomApe.Text, strSexo, Convert.ToDateTime(textFecha.Text), textDireccion.Text, int.Parse(textNumSS.Text));
+            EnfermoLinq.SP_ModificarEnferno(int.Parse(textInscripcion.Text), textNomApe.Text, textDireccion.Text, Convert.ToDateTime(textFecha.Text), strSexo, int.Parse(textNumSS.Text));
             this.listarenfermos();
         }
 
@@ -92,6 +92,14 @@ namespace HUCANET
         {
             EnfermoLinq.SP_EliminarEnfermo(int.Parse(textInscripcion.Text));
             this.listarenfermos();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Desea Salir", "Salir", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == System.Windows.Forms.DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
     }
 }

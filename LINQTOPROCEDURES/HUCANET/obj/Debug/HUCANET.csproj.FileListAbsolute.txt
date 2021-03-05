@@ -8,3 +8,7 @@ C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCAN
 C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.csproj.CoreCompileInputs.cache
 C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.exe
 C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.pdb
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.Form2.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.Form3.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.MDIParent1.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\HUCANET\obj\Debug\HUCANET.Form4.resources
