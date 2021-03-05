@@ -19,21 +19,3 @@ C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\
 C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel_MarkupCompile.lref
 C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel.exe
 C:\Users\Mónica García\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel.pdb
-<<<<<<< HEAD
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\VideoClub_Madison.csprojAssemblyReference.cache
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\MainWindow.g.cs
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\App.g.cs
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel_MarkupCompile.cache
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel_MarkupCompile.lref
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel.exe
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel.pdb
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\bin\Debug\Hotel.exe.config
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\bin\Debug\Hotel.exe
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\bin\Debug\Hotel.pdb
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\MainWindow.baml
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel.g.resources
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\Hotel.Properties.Resources.resources
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\VideoClub_Madison.csproj.GenerateResource.cache
-C:\Users\MAÑANA\source\repos\CURSO_NET\Mi primer WPF\VideoClub_Madison\obj\Debug\VideoClub_Madison.csproj.CoreCompileInputs.cache
-=======
->>>>>>> b7f393a8a8ed5dea3fa32102159fe4d537cc6b3f
