@@ -30,6 +30,9 @@ namespace HUCANET
 		
     #region Definiciones de métodos de extensibilidad
     partial void OnCreated();
+    partial void InsertHospital(Hospital instance);
+    partial void UpdateHospital(Hospital instance);
+    partial void DeleteHospital(Hospital instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
@@ -70,6 +73,30 @@ namespace HUCANET
 			}
 		}
 		
+		public System.Data.Linq.Table<Doctor> Doctor
+		{
+			get
+			{
+				return this.GetTable<Doctor>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Sala> Sala
+		{
+			get
+			{
+				return this.GetTable<Sala>();
+			}
+		}
+		
+		public System.Data.Linq.Table<Hospital> Hospital
+		{
+			get
+			{
+				return this.GetTable<Hospital>();
+			}
+		}
+		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_InsertaEnfermo")]
 		public int SP_InsertaEnfermo([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> inscripcion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Apellido", DbType="VarChar(50)")] string apellido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Direccion", DbType="VarChar(50)")] string direccion, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Fecha_Nac", DbType="SmallDateTime")] System.Nullable<System.DateTime> fecha_Nac, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="S", DbType="VarChar(2)")] string s, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="NSS", DbType="Int")] System.Nullable<int> nSS)
 		{
@@ -103,6 +130,69 @@ namespace HUCANET
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), inscripcion, apellido, direccion, fecha_Nac, s, nSS);
 			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarDoctor")]
+		public ISingleResult<SP_ListarDoctorResult> SP_ListarDoctor()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<SP_ListarDoctorResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_InsertaDoctor")]
+		public int SP_InsertaDoctor([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Hospital_Cod", DbType="Int")] System.Nullable<int> hospital_Cod, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Doctor_No", DbType="Int")] System.Nullable<int> doctor_No, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Apellido", DbType="VarChar(50)")] string apellido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Especialidad", DbType="VarChar(50)")] string especialidad)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), hospital_Cod, doctor_No, apellido, especialidad);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_EliminarDoctor")]
+		public int SP_EliminarDoctor([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Doctor_No", DbType="Int")] System.Nullable<int> doctor_No)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), doctor_No);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_InsertaSala")]
+		public int SP_InsertaSala([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Sala_Cod", DbType="Int")] System.Nullable<int> sala_Cod, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cod_Hospital", DbType="Int")] System.Nullable<int> cod_Hospital, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Especialidad", DbType="VarChar(50)")] string especialidad)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sala_Cod, cod_Hospital, nombre, especialidad);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ListarSala")]
+		public ISingleResult<SP_ListarSalaResult> SP_ListarSala()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<SP_ListarSalaResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ModificarSala")]
+		public int SP_ModificarSala([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Sala_Cod", DbType="Int")] System.Nullable<int> sala_Cod, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Cod_Hospital", DbType="Int")] System.Nullable<int> cod_Hospital, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Nombre", DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Especialidad", DbType="VarChar(50)")] string especialidad)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sala_Cod, cod_Hospital, nombre, especialidad);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_EliminarSala")]
+		public int SP_EliminarSala([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Sala_Cod", DbType="Int")] System.Nullable<int> sala_Cod)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), sala_Cod);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_ModificarDoctor")]
+		public int SP_ModificarDoctor1([global::System.Data.Linq.Mapping.ParameterAttribute(Name="Hospital_Cod", DbType="Int")] System.Nullable<int> hospital_Cod, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Doctor_No", DbType="Int")] System.Nullable<int> doctor_No, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Apellido", DbType="VarChar(50)")] string apellido, [global::System.Data.Linq.Mapping.ParameterAttribute(Name="Especialidad", DbType="VarChar(50)")] string especialidad)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), hospital_Cod, doctor_No, apellido, especialidad);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="dbo.SP_CodigosHosp")]
+		public ISingleResult<SP_CodigosHospResult> SP_CodigosHosp()
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())));
+			return ((ISingleResult<SP_CodigosHospResult>)(result.ReturnValue));
 		}
 	}
 	
@@ -255,6 +345,326 @@ namespace HUCANET
 				{
 					this._Cod_Hospital = value;
 				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Doctor")]
+	public partial class Doctor
+	{
+		
+		private System.Nullable<int> _Hospital_Cod;
+		
+		private System.Nullable<int> _Doctor_No;
+		
+		private string _Apellido;
+		
+		private string _Especialidad;
+		
+		public Doctor()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Hospital_Cod", DbType="Int")]
+		public System.Nullable<int> Hospital_Cod
+		{
+			get
+			{
+				return this._Hospital_Cod;
+			}
+			set
+			{
+				if ((this._Hospital_Cod != value))
+				{
+					this._Hospital_Cod = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Doctor_No", DbType="Int")]
+		public System.Nullable<int> Doctor_No
+		{
+			get
+			{
+				return this._Doctor_No;
+			}
+			set
+			{
+				if ((this._Doctor_No != value))
+				{
+					this._Doctor_No = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Apellido", DbType="VarChar(50)")]
+		public string Apellido
+		{
+			get
+			{
+				return this._Apellido;
+			}
+			set
+			{
+				if ((this._Apellido != value))
+				{
+					this._Apellido = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Especialidad", DbType="VarChar(50)")]
+		public string Especialidad
+		{
+			get
+			{
+				return this._Especialidad;
+			}
+			set
+			{
+				if ((this._Especialidad != value))
+				{
+					this._Especialidad = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Sala")]
+	public partial class Sala
+	{
+		
+		private System.Nullable<int> _Sala_Cod;
+		
+		private System.Nullable<int> _Cod_Hospital;
+		
+		private string _Nombre;
+		
+		private string _Especialidad;
+		
+		public Sala()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sala_Cod", DbType="Int")]
+		public System.Nullable<int> Sala_Cod
+		{
+			get
+			{
+				return this._Sala_Cod;
+			}
+			set
+			{
+				if ((this._Sala_Cod != value))
+				{
+					this._Sala_Cod = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cod_Hospital", DbType="Int")]
+		public System.Nullable<int> Cod_Hospital
+		{
+			get
+			{
+				return this._Cod_Hospital;
+			}
+			set
+			{
+				if ((this._Cod_Hospital != value))
+				{
+					this._Cod_Hospital = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="VarChar(50)")]
+		public string Nombre
+		{
+			get
+			{
+				return this._Nombre;
+			}
+			set
+			{
+				if ((this._Nombre != value))
+				{
+					this._Nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Especialidad", DbType="VarChar(50)")]
+		public string Especialidad
+		{
+			get
+			{
+				return this._Especialidad;
+			}
+			set
+			{
+				if ((this._Especialidad != value))
+				{
+					this._Especialidad = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.Hospital")]
+	public partial class Hospital : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _Hospital_cod;
+		
+		private string _Nombre;
+		
+		private string _Direccion;
+		
+		private string _Telefono;
+		
+		private System.Nullable<int> _num_cama;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnHospital_codChanging(int value);
+    partial void OnHospital_codChanged();
+    partial void OnNombreChanging(string value);
+    partial void OnNombreChanged();
+    partial void OnDireccionChanging(string value);
+    partial void OnDireccionChanged();
+    partial void OnTelefonoChanging(string value);
+    partial void OnTelefonoChanged();
+    partial void Onnum_camaChanging(System.Nullable<int> value);
+    partial void Onnum_camaChanged();
+    #endregion
+		
+		public Hospital()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Hospital_cod", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int Hospital_cod
+		{
+			get
+			{
+				return this._Hospital_cod;
+			}
+			set
+			{
+				if ((this._Hospital_cod != value))
+				{
+					this.OnHospital_codChanging(value);
+					this.SendPropertyChanging();
+					this._Hospital_cod = value;
+					this.SendPropertyChanged("Hospital_cod");
+					this.OnHospital_codChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="VarChar(50)")]
+		public string Nombre
+		{
+			get
+			{
+				return this._Nombre;
+			}
+			set
+			{
+				if ((this._Nombre != value))
+				{
+					this.OnNombreChanging(value);
+					this.SendPropertyChanging();
+					this._Nombre = value;
+					this.SendPropertyChanged("Nombre");
+					this.OnNombreChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Direccion", DbType="VarChar(50)")]
+		public string Direccion
+		{
+			get
+			{
+				return this._Direccion;
+			}
+			set
+			{
+				if ((this._Direccion != value))
+				{
+					this.OnDireccionChanging(value);
+					this.SendPropertyChanging();
+					this._Direccion = value;
+					this.SendPropertyChanged("Direccion");
+					this.OnDireccionChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Telefono", DbType="VarChar(50)")]
+		public string Telefono
+		{
+			get
+			{
+				return this._Telefono;
+			}
+			set
+			{
+				if ((this._Telefono != value))
+				{
+					this.OnTelefonoChanging(value);
+					this.SendPropertyChanging();
+					this._Telefono = value;
+					this.SendPropertyChanged("Telefono");
+					this.OnTelefonoChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_num_cama", DbType="Int")]
+		public System.Nullable<int> num_cama
+		{
+			get
+			{
+				return this._num_cama;
+			}
+			set
+			{
+				if ((this._num_cama != value))
+				{
+					this.Onnum_camaChanging(value);
+					this.SendPropertyChanging();
+					this._num_cama = value;
+					this.SendPropertyChanged("num_cama");
+					this.Onnum_camaChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -558,6 +968,192 @@ namespace HUCANET
 				if ((this._Cod_Hospital != value))
 				{
 					this._Cod_Hospital = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarDoctorResult
+	{
+		
+		private System.Nullable<int> _Hospital_Cod;
+		
+		private System.Nullable<int> _Doctor_No;
+		
+		private string _Apellido;
+		
+		private string _Especialidad;
+		
+		public SP_ListarDoctorResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Hospital_Cod", DbType="Int")]
+		public System.Nullable<int> Hospital_Cod
+		{
+			get
+			{
+				return this._Hospital_Cod;
+			}
+			set
+			{
+				if ((this._Hospital_Cod != value))
+				{
+					this._Hospital_Cod = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Doctor_No", DbType="Int")]
+		public System.Nullable<int> Doctor_No
+		{
+			get
+			{
+				return this._Doctor_No;
+			}
+			set
+			{
+				if ((this._Doctor_No != value))
+				{
+					this._Doctor_No = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Apellido", DbType="VarChar(50)")]
+		public string Apellido
+		{
+			get
+			{
+				return this._Apellido;
+			}
+			set
+			{
+				if ((this._Apellido != value))
+				{
+					this._Apellido = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Especialidad", DbType="VarChar(50)")]
+		public string Especialidad
+		{
+			get
+			{
+				return this._Especialidad;
+			}
+			set
+			{
+				if ((this._Especialidad != value))
+				{
+					this._Especialidad = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_ListarSalaResult
+	{
+		
+		private System.Nullable<int> _Sala_Cod;
+		
+		private System.Nullable<int> _Cod_Hospital;
+		
+		private string _Nombre;
+		
+		private string _Especialidad;
+		
+		public SP_ListarSalaResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Sala_Cod", DbType="Int")]
+		public System.Nullable<int> Sala_Cod
+		{
+			get
+			{
+				return this._Sala_Cod;
+			}
+			set
+			{
+				if ((this._Sala_Cod != value))
+				{
+					this._Sala_Cod = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Cod_Hospital", DbType="Int")]
+		public System.Nullable<int> Cod_Hospital
+		{
+			get
+			{
+				return this._Cod_Hospital;
+			}
+			set
+			{
+				if ((this._Cod_Hospital != value))
+				{
+					this._Cod_Hospital = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Nombre", DbType="VarChar(50)")]
+		public string Nombre
+		{
+			get
+			{
+				return this._Nombre;
+			}
+			set
+			{
+				if ((this._Nombre != value))
+				{
+					this._Nombre = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Especialidad", DbType="VarChar(50)")]
+		public string Especialidad
+		{
+			get
+			{
+				return this._Especialidad;
+			}
+			set
+			{
+				if ((this._Especialidad != value))
+				{
+					this._Especialidad = value;
+				}
+			}
+		}
+	}
+	
+	public partial class SP_CodigosHospResult
+	{
+		
+		private int _Hospital_cod;
+		
+		public SP_CodigosHospResult()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Hospital_cod", DbType="Int NOT NULL")]
+		public int Hospital_cod
+		{
+			get
+			{
+				return this._Hospital_cod;
+			}
+			set
+			{
+				if ((this._Hospital_cod != value))
+				{
+					this._Hospital_cod = value;
 				}
 			}
 		}

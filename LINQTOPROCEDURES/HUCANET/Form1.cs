@@ -26,7 +26,7 @@ namespace HUCANET
     private void Form1_Load(object sender, EventArgs e)
     {
             this.listarenfermos();
-        }
+    }
     private bool validaCadena(String cadena, String titulo)
         {
 

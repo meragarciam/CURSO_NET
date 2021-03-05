@@ -26,11 +26,13 @@ namespace HUCANET
             }
             else return true;
         }
+        private void FormPadre_FormClosing(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             MDIParent1 FormularioPadre = new MDIParent1();
-
-            
 
             string strUsuario;
             string strContra;
@@ -40,6 +42,7 @@ namespace HUCANET
                 strUsuario = textUsuario.Text;
                 strContra = textPassword.Text;
                 FormularioPadre.Show();
+                FormularioPadre.FormClosing += new FormClosingEventHandler(FormPadre_FormClosing);
                 this.Hide();
 
             }
