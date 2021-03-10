@@ -1,0 +1,15 @@
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos.csprojAssemblyReference.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\MainWindow.g.cs
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\App.g.cs
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos_MarkupCompile.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos_MarkupCompile.lref
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\bin\Debug\Alumnos.exe.config
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\bin\Debug\Alumnos.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\bin\Debug\Alumnos.pdb
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\MainWindow.baml
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos.g.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos.Properties.Resources.resources
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos.csproj.GenerateResource.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos.csproj.CoreCompileInputs.cache
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos.exe
+C:\Users\MAÑANA\source\repos\CURSO_NET\LINQTOPROCEDURES\Alumnos\obj\Debug\Alumnos.pdb

@@ -30,17 +30,17 @@ namespace LINQ_1
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.GridDatos = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textPrec = new System.Windows.Forms.TextBox();
-            this.textProd = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textStock = new System.Windows.Forms.TextBox();
-            this.textCat = new System.Windows.Forms.TextBox();
-            this.buttonGuardar = new System.Windows.Forms.Button();
             this.buttonAñadir = new System.Windows.Forms.Button();
+            this.buttonGuardar = new System.Windows.Forms.Button();
+            this.textCat = new System.Windows.Forms.TextBox();
+            this.textStock = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textProd = new System.Windows.Forms.TextBox();
+            this.textPrec = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.GridDatos = new System.Windows.Forms.DataGridView();
             this.label5 = new System.Windows.Forms.Label();
             this.comboNombreProd = new System.Windows.Forms.ComboBox();
             this.buttonEliminar = new System.Windows.Forms.Button();
@@ -67,56 +67,39 @@ namespace LINQ_1
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "NUEVO PRODUCTO";
             // 
-            // GridDatos
+            // buttonAñadir
             // 
-            this.GridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridDatos.Location = new System.Drawing.Point(37, 262);
-            this.GridDatos.Name = "GridDatos";
-            this.GridDatos.RowHeadersWidth = 51;
-            this.GridDatos.RowTemplate.Height = 24;
-            this.GridDatos.Size = new System.Drawing.Size(723, 160);
-            this.GridDatos.TabIndex = 1;
+            this.buttonAñadir.Location = new System.Drawing.Point(34, 190);
+            this.buttonAñadir.Name = "buttonAñadir";
+            this.buttonAñadir.Size = new System.Drawing.Size(75, 23);
+            this.buttonAñadir.TabIndex = 9;
+            this.buttonAñadir.Text = "Añadir";
+            this.buttonAñadir.UseVisualStyleBackColor = true;
+            this.buttonAñadir.Click += new System.EventHandler(this.buttonAñadir_Click);
             // 
-            // label1
+            // buttonGuardar
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 40);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Nuevo producto";
+            this.buttonGuardar.Location = new System.Drawing.Point(201, 190);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(84, 23);
+            this.buttonGuardar.TabIndex = 8;
+            this.buttonGuardar.Text = "Actualizar";
+            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
-            // label2
+            // textCat
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(188, 40);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Precio Unidad";
+            this.textCat.Location = new System.Drawing.Point(185, 152);
+            this.textCat.Name = "textCat";
+            this.textCat.Size = new System.Drawing.Size(100, 22);
+            this.textCat.TabIndex = 7;
             // 
-            // textPrec
+            // textStock
             // 
-            this.textPrec.Location = new System.Drawing.Point(191, 71);
-            this.textPrec.Name = "textPrec";
-            this.textPrec.Size = new System.Drawing.Size(100, 22);
-            this.textPrec.TabIndex = 2;
-            // 
-            // textProd
-            // 
-            this.textProd.Location = new System.Drawing.Point(21, 71);
-            this.textProd.Name = "textProd";
-            this.textProd.Size = new System.Drawing.Size(100, 22);
-            this.textProd.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Unidades En Stock";
+            this.textStock.Location = new System.Drawing.Point(21, 152);
+            this.textStock.Name = "textStock";
+            this.textStock.Size = new System.Drawing.Size(100, 22);
+            this.textStock.TabIndex = 6;
             // 
             // label4
             // 
@@ -127,37 +110,57 @@ namespace LINQ_1
             this.label4.TabIndex = 5;
             this.label4.Text = "Categoría";
             // 
-            // textStock
+            // label3
             // 
-            this.textStock.Location = new System.Drawing.Point(21, 152);
-            this.textStock.Name = "textStock";
-            this.textStock.Size = new System.Drawing.Size(100, 22);
-            this.textStock.TabIndex = 6;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(18, 117);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 17);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Unidades En Stock";
             // 
-            // textCat
+            // textProd
             // 
-            this.textCat.Location = new System.Drawing.Point(185, 152);
-            this.textCat.Name = "textCat";
-            this.textCat.Size = new System.Drawing.Size(100, 22);
-            this.textCat.TabIndex = 7;
+            this.textProd.Location = new System.Drawing.Point(21, 71);
+            this.textProd.Name = "textProd";
+            this.textProd.Size = new System.Drawing.Size(100, 22);
+            this.textProd.TabIndex = 3;
             // 
-            // buttonGuardar
+            // textPrec
             // 
-            this.buttonGuardar.Location = new System.Drawing.Point(201, 190);
-            this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(84, 23);
-            this.buttonGuardar.TabIndex = 8;
-            this.buttonGuardar.Text = "Actualizar";
-            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.textPrec.Location = new System.Drawing.Point(191, 71);
+            this.textPrec.Name = "textPrec";
+            this.textPrec.Size = new System.Drawing.Size(100, 22);
+            this.textPrec.TabIndex = 2;
             // 
-            // buttonAñadir
+            // label2
             // 
-            this.buttonAñadir.Location = new System.Drawing.Point(34, 190);
-            this.buttonAñadir.Name = "buttonAñadir";
-            this.buttonAñadir.Size = new System.Drawing.Size(75, 23);
-            this.buttonAñadir.TabIndex = 9;
-            this.buttonAñadir.Text = "Añadir";
-            this.buttonAñadir.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(188, 40);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(97, 17);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Precio Unidad";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 40);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(109, 17);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Nuevo producto";
+            // 
+            // GridDatos
+            // 
+            this.GridDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GridDatos.Location = new System.Drawing.Point(37, 262);
+            this.GridDatos.Name = "GridDatos";
+            this.GridDatos.RowHeadersWidth = 51;
+            this.GridDatos.RowTemplate.Height = 24;
+            this.GridDatos.Size = new System.Drawing.Size(723, 160);
+            this.GridDatos.TabIndex = 1;
+            this.GridDatos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridDatos_CellContentClick);
             // 
             // label5
             // 
@@ -184,6 +187,7 @@ namespace LINQ_1
             this.buttonEliminar.TabIndex = 10;
             this.buttonEliminar.Text = "Eliminar Producto";
             this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // Form1
             // 
@@ -197,6 +201,7 @@ namespace LINQ_1
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GridDatos)).EndInit();

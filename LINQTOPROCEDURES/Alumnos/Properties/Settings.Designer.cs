@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace LINQ_1.Properties {
+namespace Alumnos.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -31,17 +31,6 @@ namespace LINQ_1.Properties {
         public string LINQConnectionString {
             get {
                 return ((string)(this["LINQConnectionString"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=CADAVILES08\\SQLEXPRESS02;Initial Catalog=Northwind;Integrated Securit" +
-            "y=True")]
-        public string NorthwindConnectionString {
-            get {
-                return ((string)(this["NorthwindConnectionString"]));
             }
         }
     }
